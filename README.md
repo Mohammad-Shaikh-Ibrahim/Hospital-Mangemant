@@ -2,6 +2,9 @@
 
 A modern React-based patient management system that demonstrates different form handling approaches using React Hook Form and Formik.
 
+![image](https://github.com/user-attachments/assets/aac2623a-b1fe-4775-80d5-952ebeff7307)
+
+
 ## Features
 
 - **Dual Form Implementation**: The project showcases two different approaches to form handling:
