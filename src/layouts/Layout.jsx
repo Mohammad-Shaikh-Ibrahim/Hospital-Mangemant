@@ -50,7 +50,7 @@ const Layout = ({ children }) => {
 
     return (
         <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-            <StyledAppBar position="fixed">
+            <StyledAppBar position="sticky">
                 <StyledToolbar>
                     <Logo variant="h6" onClick={() => navigate('/')}>
                         <LocalHospital /> HMS
