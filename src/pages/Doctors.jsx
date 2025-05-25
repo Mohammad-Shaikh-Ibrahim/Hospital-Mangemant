@@ -151,8 +151,8 @@ const Doctors = () => {
                     <AddButton
                         variant="contained"
                         startIcon={<AddIcon />}
-                        onClick={() => navigate('/add-doctor')}
-                    >
+                        onClick={() => navigate('/doctor-registration')}
+                    > 
                         Add Doctor
                     </AddButton>
                 </HeaderContainer>
