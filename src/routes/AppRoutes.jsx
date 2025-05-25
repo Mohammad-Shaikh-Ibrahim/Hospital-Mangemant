@@ -18,6 +18,7 @@ const AppRoutes = () => {
                 <Route path="/add-patient" element={<AddPatientReactHookForm />} />
                 <Route path="/add-patient/:id" element={<AddPatientReactHookForm />} />
                 <Route path="/doctor-registration" element={<DoctorRegistration />} />
+                <Route path="/doctor-registration/:id" element={<DoctorRegistration />} />
                 <Route path="/patient-details/:id" element={<PatientDetails />} />
                 <Route path="/doctor-details/:id" element={<DoctorDetails />} />
                 <Route path="*" element={<Navigate to="/" replace />} />

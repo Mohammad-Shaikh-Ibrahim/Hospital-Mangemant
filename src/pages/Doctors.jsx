@@ -138,7 +138,7 @@ const Doctors = () => {
     };
 
     const handleEditClick = (doctor) => {
-        navigate(`/add-doctor/${doctor.id}`);
+        navigate(`/doctor-registration/${doctor.id}`);
     };
 
     return (
@@ -152,7 +152,7 @@ const Doctors = () => {
                         variant="contained"
                         startIcon={<AddIcon />}
                         onClick={() => navigate('/doctor-registration')}
-                    > 
+                    >
                         Add Doctor
                     </AddButton>
                 </HeaderContainer>
