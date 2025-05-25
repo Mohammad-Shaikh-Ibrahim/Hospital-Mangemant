@@ -1,4 +1,4 @@
-# Patient Management System
+# Hospital Management System
 
 A modern React-based patient management system that demonstrates different form handling approaches using React Hook Form and Formik.
 
