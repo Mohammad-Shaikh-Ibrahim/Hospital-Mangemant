@@ -44,7 +44,7 @@ const StyledPaper = styled(Paper)(({ theme }) => ({
     backdropFilter: 'blur(12px)',
     borderRadius: '16px',
     padding: theme.spacing(4),
-    boxShadow: '0 12px 30px rgba(0, 0, 0, 0.1)',
+    // boxShadow: '0 12px 30px rgba(0, 0, 0, 0.1)',
     transition: 'transform 0.3s ease, box-shadow 0.3s ease',
     '&:hover': {
         transform: 'translateY(-5px)',
@@ -178,13 +178,13 @@ const PatientDetails = () => {
                 </PatientHeader>
 
                 <Grid container spacing={3}>
-                    <Grid item xs={12}>
+                    <Grid item size={12}>
                         <SectionTitle variant="h6">
                             <PersonIcon /> Basic Information
                         </SectionTitle>
                         <Divider sx={{ mb: 2 }} />
                         <Grid container spacing={2}>
-                            <Grid item xs={12} sm={6}>
+                            <Grid item size={4}>
                                 <InfoItem>
                                     <Label>
                                         <PersonIcon fontSize="small" /> Full Name
@@ -192,7 +192,7 @@ const PatientDetails = () => {
                                     <Value>{`${patient.firstName} ${patient.lastName}`}</Value>
                                 </InfoItem>
                             </Grid>
-                            <Grid item xs={12} sm={6}>
+                            <Grid item size={4}>
                                 <InfoItem>
                                     <Label>
                                         <PersonIcon fontSize="small" /> Gender
@@ -200,15 +200,8 @@ const PatientDetails = () => {
                                     <Value>{patient.gender}</Value>
                                 </InfoItem>
                             </Grid>
-                            <Grid item xs={12} sm={6}>
-                                <InfoItem>
-                                    <Label>
-                                        <CalendarTodayIcon fontSize="small" /> Date of Birth
-                                    </Label>
-                                    <Value>{patient.dateOfBirth}</Value>
-                                </InfoItem>
-                            </Grid>
-                            <Grid item xs={12} sm={6}>
+
+                            <Grid item size={4}>
                                 <InfoItem>
                                     <Label>
                                         <BloodtypeIcon fontSize="small" /> Blood Type
@@ -219,13 +212,13 @@ const PatientDetails = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid item xs={12}>
+                    <Grid item size={12}>
                         <SectionTitle variant="h6">
                             <PhoneIcon /> Contact Information
                         </SectionTitle>
                         <Divider sx={{ mb: 2 }} />
                         <Grid container spacing={2}>
-                            <Grid item xs={12} sm={6}>
+                            <Grid item size={4}>
                                 <InfoItem>
                                     <Label>
                                         <PhoneIcon fontSize="small" /> Phone
@@ -233,7 +226,7 @@ const PatientDetails = () => {
                                     <Value>{patient.phone}</Value>
                                 </InfoItem>
                             </Grid>
-                            <Grid item xs={12} sm={6}>
+                            <Grid item size={4}>
                                 <InfoItem>
                                     <Label>
                                         <EmailIcon fontSize="small" /> Email
@@ -241,7 +234,7 @@ const PatientDetails = () => {
                                     <Value>{patient.email}</Value>
                                 </InfoItem>
                             </Grid>
-                            <Grid item xs={12}>
+                            <Grid item size={4}>
                                 <InfoItem>
                                     <Label>
                                         <LocationOnIcon fontSize="small" /> Address
@@ -252,13 +245,13 @@ const PatientDetails = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid item xs={12}>
+                    <Grid item size={12}>
                         <SectionTitle variant="h6">
                             <MedicalServicesIcon /> Medical Information
                         </SectionTitle>
                         <Divider sx={{ mb: 2 }} />
                         <Grid container spacing={2}>
-                            <Grid item xs={12} sm={6}>
+                            <Grid item size={4}>
                                 <InfoItem>
                                     <Label>
                                         <MedicalServicesIcon fontSize="small" /> Medical History
@@ -266,7 +259,7 @@ const PatientDetails = () => {
                                     <Value>{patient.medicalHistory || 'No medical history recorded'}</Value>
                                 </InfoItem>
                             </Grid>
-                            <Grid item xs={12} sm={6}>
+                            <Grid item size={4}>
                                 <InfoItem>
                                     <Label>
                                         <MedicalServicesIcon fontSize="small" /> Allergies
@@ -274,7 +267,7 @@ const PatientDetails = () => {
                                     <Value>{patient.allergies || 'No allergies recorded'}</Value>
                                 </InfoItem>
                             </Grid>
-                            <Grid item xs={12}>
+                            <Grid item size={4}>
                                 <InfoItem>
                                     <Label>
                                         <MedicalServicesIcon fontSize="small" /> Current Medications
@@ -285,13 +278,13 @@ const PatientDetails = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid item xs={12}>
+                    <Grid item size={12}>
                         <SectionTitle variant="h6">
                             <EmergencyIcon /> Emergency Contact
                         </SectionTitle>
                         <Divider sx={{ mb: 2 }} />
                         <Grid container spacing={2}>
-                            <Grid item xs={12} sm={6}>
+                            <Grid item size={4}>
                                 <InfoItem>
                                     <Label>
                                         <PersonIcon fontSize="small" /> Name
@@ -299,7 +292,7 @@ const PatientDetails = () => {
                                     <Value>{patient.emergencyContact?.name || 'Not specified'}</Value>
                                 </InfoItem>
                             </Grid>
-                            <Grid item xs={12} sm={6}>
+                            <Grid item size={4}>
                                 <InfoItem>
                                     <Label>
                                         <PersonIcon fontSize="small" /> Relationship
@@ -307,7 +300,7 @@ const PatientDetails = () => {
                                     <Value>{patient.emergencyContact?.relationship || 'Not specified'}</Value>
                                 </InfoItem>
                             </Grid>
-                            <Grid item xs={12} sm={6}>
+                            <Grid item size={4}>
                                 <InfoItem>
                                     <Label>
                                         <PhoneIcon fontSize="small" /> Phone
@@ -318,7 +311,7 @@ const PatientDetails = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid item xs={12}>
+                    <Grid item size={12}>
                         <SectionTitle variant="h6">
                             <NoteIcon /> Notes
                         </SectionTitle>

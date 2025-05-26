@@ -13,6 +13,7 @@ import { LocalHospital, People, Home } from '@mui/icons-material';
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
     boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+    borderRadius:0,
 }));
 
 const StyledToolbar = styled(Toolbar)({

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
     Container,
@@ -15,13 +14,15 @@ const HeroSection = styled(Box)(({ theme }) => ({
     minHeight: '80vh',
     display: 'flex',
     alignItems: 'center',
-    background: 'linear-gradient(45deg, #8b0019 30%, #c62828 90%)',
-    color: 'white',
+    background: 'white',
+    color: '#8b0019',
     padding: theme.spacing(4),
+    borderRadius: theme.shape.borderRadius,
 }));
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(4),
+    borderRadius: theme.shape.borderRadius,
     textAlign: 'center',
     height: '100%',
     transition: 'transform 0.3s ease-in-out',
